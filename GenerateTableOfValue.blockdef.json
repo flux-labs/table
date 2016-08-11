@@ -1,0 +1,44 @@
+{
+    "Type": "create/GenerateTableOfValue",
+    "Description": "Generate a table of values.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "Value": {
+            "Type": "*"
+        },
+        "nCol": {
+            "Type": "Number"
+        },
+        "nRow": {
+            "Type": "Number"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GenerateTableOfValue.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "nRow",
+            "nCol",
+            "Value"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

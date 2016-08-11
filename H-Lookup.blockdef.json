@@ -1,0 +1,48 @@
+{
+    "Type": "query/H-Lookup",
+    "Description": "Searches for a value in a given row of a table, and then returns a value in the same column from a row you specify in the table.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "LookupRowIndex": {
+            "Type": "Number|String"
+        },
+        "LookupValue": {
+            "Type": "*"
+        },
+        "ReturnRowIndex": {
+            "Type": "Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Value": {
+            "Type": "*|[]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "H-Lookup.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "LookupValue",
+            "LookupRowIndex",
+            "ReturnRowIndex"
+        ],
+        "OutputOrder": [
+            "Value"
+        ]
+    }
+}

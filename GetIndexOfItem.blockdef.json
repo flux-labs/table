@@ -1,0 +1,45 @@
+{
+    "Type": "query/GetIndexOfItem",
+    "Description": "Get the index of a specific item.",
+    "Inputs": {
+        "Table": {
+            "Type": "[][]*"
+        },
+        "Value": {
+            "Type": "*"
+        },
+        "zeroIndexing": {
+            "Type": "Boolean"
+        }
+    },
+    "Outputs": {
+        "Found": {
+            "Type": "Boolean"
+        },
+        "Index": {
+            "Type": "[]Number|String"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GetIndexOfItem.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Value",
+            "zeroIndexing"
+        ],
+        "OutputOrder": [
+            "Index",
+            "Found"
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}

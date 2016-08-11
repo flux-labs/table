@@ -4,7 +4,7 @@ var list = require("flux/list");
 var math = require("flux/math");
 
 /**
- * Deletes n number of columns at index i, n =DeleteCount, i = index. Index input reads Number type for 0-indexing, String type for table-indexing.
+ * Deletes n number of rows at index i, n =DeleteCount, i = index. Index input reads Number type for 0-indexing, String type for table-indexing.
  * 
  * @param {2D Array.<*>}	Table          	Table.
  * @param {Number	   		Index	   		Index to which rows will be deleted. Number type for 0-indexing, String type for table-indexing.

@@ -1,0 +1,46 @@
+{
+    "Type": "mutation/SortByColumn",
+    "Description": "Create Revit floor. Number of floors equal to number of profiles provided would be created.",
+    "Tags": [
+    ],
+    "UserTags": [
+        "Order by column",
+        "A-Z"
+    ],
+    "Inputs": {
+        "Ascending": {
+            "Type": "Boolean"
+        },
+        "ColIndex": {
+            "Type": "Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "CreateFloor.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "ColIndex",
+            "Ascending"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

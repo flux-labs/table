@@ -1,0 +1,44 @@
+{
+    "Type": "query/GetColByColName",
+    "Description": "Get column based on column name.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "Name": {
+            "Type": "*"
+        },
+        "RowIndex": {
+            "Type": "Number"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Column": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GetColumnByColumnName.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Name",
+            "RowIndex"
+        ],
+        "OutputOrder": [
+            "Column"
+        ]
+    }
+}

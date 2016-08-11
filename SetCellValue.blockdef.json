@@ -1,0 +1,41 @@
+{
+    "Type": "mutation/SetCellvalue",
+    "Description": "Sets the value of a cell in the table.",
+    "Inputs": {
+        "Index": {
+            "Type": "[]Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        },
+        "Value": {
+            "Type": "*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "Number"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "SetCellvalue.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Index",
+            "Value"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}

@@ -1,0 +1,48 @@
+{
+    "Type": "query/V-Lookup",
+    "Description": "Searches for a value in a given column of a table, and then returns a value in the same row from a column you specify in the table.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "LookupColIndex": {
+            "Type": "Number|String"
+        },
+        "LookupValue": {
+            "Type": "*"
+        },
+        "ReturnColIndex": {
+            "Type": "Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Value": {
+            "Type": "*|[]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "V-Lookup.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "LookupValue",
+            "LookupColIndex",
+            "ReturnColIndex"
+        ],
+        "OutputOrder": [
+            "Value"
+        ]
+    }
+}

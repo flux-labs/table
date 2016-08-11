@@ -1,0 +1,37 @@
+{
+    "Type": "query/Size",
+    "Description": " Outputs the size (i.e. number of rows and columns) of an array.",
+    "Inputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "nCol": {
+            "Type": "Number"
+        },
+        "nRow": {
+            "Type": "Number"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "Size.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table"
+        ],
+        "OutputOrder": [
+            "nRow",
+            "nCol"
+        ]
+    },
+    "Tags": [],
+    "UserTags": []
+}

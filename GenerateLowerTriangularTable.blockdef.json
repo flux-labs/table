@@ -1,0 +1,44 @@
+{
+    "Type": "create/GenerateLowerTriangularTable",
+    "Description": "Generate a low triangular table of a given value.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "Strict": {
+            "Type": "Boolean"
+        },
+        "Value": {
+            "Type": "Number"
+        },
+        "n": {
+            "Type": "Number"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GenerateLowerTriangularTable.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "n",
+            "Value",
+            "Strict"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

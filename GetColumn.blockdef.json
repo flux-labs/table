@@ -1,0 +1,37 @@
+{
+    "Type": "query/GetColumn",
+    "Description": "Retrieves the column of a table at a specific index. As for the index input use Number type for 0-indexing, String type for table-indexing.",
+    "Inputs": {
+        "Index": {
+            "Type": "Number"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Column": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GetColumn.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Index"
+        ],
+        "OutputOrder": [
+            "Column"
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Get"]
+}

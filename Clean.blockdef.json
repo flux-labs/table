@@ -1,0 +1,33 @@
+{
+    "Type": "mutation/Clean",
+    "Description": "Clean a table from empty rows or columns.",
+    "Inputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "Clean.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Cull","Delete Null"]
+}

@@ -1,0 +1,46 @@
+{
+    "Type": "manipulation/DeleteColumn",
+    "Description": "Deletes n number of rows at index i, n =DeleteCount, i = index. Index input reads Number type for 0-indexing, String type for table-indexing.",
+    "Tags": [
+    ],
+    "UserTags": [
+        "Remove",
+        "Substract"
+    ],
+    "Inputs": {
+        "DeleteCount": {
+            "Type": "Number"
+        },
+        "Index": {
+            "Type": "Number"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "DeleteRow.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Index",
+            "DeleteCount"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

@@ -4,7 +4,7 @@ var list = require("flux/list");
 var math = require("flux/math");
 
 /**
- * Create a table from a list of value, splitting them based on a number of columns.
+ * Create a table from a list of value, splitting them based on a number of row.
  * 
  * @param {Number}     Values	  List of values to put in the table.
  * @param {*}		   nRow		  Number of columns in the table.

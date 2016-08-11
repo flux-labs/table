@@ -1,0 +1,46 @@
+{
+    "Type": "mutation/SortByRow",
+    "Description": "Sorts a table based on the values of a given row. Sorting is ascending is Ascending input is true, descending if false.",
+    "Tags": [
+    ],
+    "UserTags": [
+        "Order by column",
+        "A-Z"
+    ],
+    "Inputs": {
+        "Ascending": {
+            "Type": "Boolean"
+        },
+        "RowIndex": {
+            "Type": "Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "SortByRow.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "RowIndex",
+            "Ascending"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

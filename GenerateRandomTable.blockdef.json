@@ -1,0 +1,40 @@
+{
+    "Type": "create/GenerateRandomTable",
+    "Description": "Generate a table of random values.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "nCol": {
+            "Type": "Number"
+        },
+        "nRow": {
+            "Type": "Number"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GenerateRandomTable.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "nRow",
+            "nCol"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    }
+}

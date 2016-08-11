@@ -1,0 +1,44 @@
+{
+    "Type": "query/GetRowByRowName",
+    "Description": "Get row based on row name.",
+    "Tags": [
+    ],
+    "UserTags": [
+    ],
+    "Inputs": {
+        "ColIndex": {
+            "Type": "Number"
+        },
+        "Name": {
+            "Type": "*"
+        },
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Outputs": {
+        "Row": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "GetRowByRowName.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "TriggerCondition": "any input",
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Name",
+            "ColIndex"
+        ],
+        "OutputOrder": [
+            "Row"
+        ]
+    }
+}

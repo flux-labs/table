@@ -1,0 +1,41 @@
+{
+    "Type": "manipulation/InsertRow",
+    "Description": "Insert values at a certain row index. Index input reads Number type for 0-indexing, String type for table-indexing.",
+    "Inputs": {
+        "Index": {
+            "Type": "Number|String"
+        },
+        "Table": {
+            "Type": "[][]*"
+        },
+        "Values": {
+            "Type": "[]*|[][]*"
+        }
+    },
+    "Outputs": {
+        "Table": {
+            "Type": "[][]*"
+        }
+    },
+    "Require": {
+        "js": {
+            "src": "InsertRow.js"
+        },
+        "unsafe": true
+    },
+    "Config": {
+        "Streaming": false
+    },
+    "Display": {
+        "InputOrder": [
+            "Table",
+            "Index",
+            "Values"
+        ],
+        "OutputOrder": [
+            "Table"
+        ]
+    },
+    "Tags": [],
+    "UserTags": ["Add Row"]
+}
