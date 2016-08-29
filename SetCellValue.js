@@ -6,7 +6,7 @@ var math = require("flux/math");
 /**
  * Sets the value of a cell in the table.
  *
- * @param {2D Array.<*>}   	Table   List of lists.
+ * @param {2D Array.<*>}   	Table   Table
  * @param {Array.<Number>}}	Index	Pair of Number type indexes (0-indexing) or alpha-numeric type index (table-indexing).
  * @param {Number}			Value	Replacement value.
  *

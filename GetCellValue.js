@@ -6,7 +6,7 @@ var math = require("flux/math");
 /**
  * Get the value of the table at a given index.
  *
- * @param {2D Array.<*>}    In      Table.
+ * @param {2D Array.<*>}    Table   Table.
  * @param {Array.<Number>}}	Index	Pair of Number type indexes (0-indexing) or alpha-numeric type index (table-indexing).
  *
  * @returns {{Table: []Number|String}}

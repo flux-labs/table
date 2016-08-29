@@ -6,8 +6,8 @@ var math = require("flux/math");
 /**
  * Index of Item.
  *
- * @param {2D Array.<*>}   Table      		List.
- * @param {*}      			Item   			Item.
+ * @param {2D Array.<*>}   	Table      		Table.
+ * @param {*}      			Item   			Item to search for.
  * @param {Boolean}			zeroIndexing	Toggle to choose whether or not to output the results as 0-indexes.
  *
  * @returns {{Index: []Number|String, Found: Boolean}}
