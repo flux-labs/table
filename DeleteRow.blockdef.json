@@ -1,5 +1,5 @@
 {
-    "Type": "manipulation/DeleteColumn",
+    "Type": "manipulation/DeleteRow",
     "Description": "Deletes n number of rows at index i, n =DeleteCount, i = index. Index input reads Number type for 0-indexing, String type for table-indexing.",
     "Tags": [
     ],

@@ -1,6 +1,6 @@
 {
     "Type": "mutation/SortByColumn",
-    "Description": "Create Revit floor. Number of floors equal to number of profiles provided would be created.",
+    "Description": "Sorts a table based on the values of a given column. Sorting is ascending is Ascending input is true, descending if false.",
     "Tags": [
     ],
     "UserTags": [
@@ -25,7 +25,7 @@
     },
     "Require": {
         "js": {
-            "src": "CreateFloor.js"
+            "src": "SortByColumn.js"
         },
         "unsafe": true
     },

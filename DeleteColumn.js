@@ -7,7 +7,7 @@ var math = require("flux/math");
  * Deletes n number of columns at index i, n =DeleteCount, i = index. Index input reads Number type for 0-indexing, String type for table-indexing.
  * 
  * @param {2D Array.<*>}	In          	Table.
- * @param {Number	   		Index	   		Index to which columns will be deleted. Number type for 0-indexing, String type for table-indexing.
+ * @param {Number}	   		Index	   		Index to which columns will be deleted. Number type for 0-indexing, String type for table-indexing.
  * @param {Number}     		DeleteCount		Number of columns to delete.
  *
  * @returns {{Out: 2D Array.<*>}}
